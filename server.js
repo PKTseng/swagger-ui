@@ -61,7 +61,7 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs))
  * @swagger
  * /login:
  *   post:
- *     summary: Logs in a user
+ *     summary: Logs in a user test
  *     tags: [Login]
  *     requestBody:
  *       required: true
@@ -87,5 +87,5 @@ app.post('/login', (req, res) => {
 })
 
 app.listen(PORT, () => {
-  console.log(`服务器正在监听端口：${PORT}`)
+  console.log(`服务器正在监听端口：${PORT}`, `http://localhost:3000/api-docs`)
 })
